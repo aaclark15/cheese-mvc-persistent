@@ -9,7 +9,7 @@ import javax.transaction.Transactional;
 /**
  * Created by LaunchCode
  */
-@Repository
-@Transactional
+@Repository     //tells system we are storing this for data
+@Transactional  //how it processes request to the database - runs the entire or none of the transaction
 public interface CheeseDao extends CrudRepository<Cheese, Integer> {
 }
